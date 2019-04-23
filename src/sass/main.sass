@@ -1,0 +1,57 @@
+@import "vars"
+@import "fonts"
+@import "../libs/bootstrap/scss/bootstrap-reboot.scss"
+@import "../libs/bootstrap/scss/bootstrap.scss"
+@import "../libs/bootstrap/scss/utilities/_sizing.scss"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	padding: 0
+	margin: 0
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.header
+	height: 100px
+
+.main
+	height: calc(100vh - 200px)
+	background: url(../img/background.jpg) no-repeat center
+	background-size: cover
+
+#users-diagram
+	display: flex
+
+
+
