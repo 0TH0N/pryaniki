@@ -1,5 +1,8 @@
-import './js/index.jsx';
-import './js/App.jsx';
+import './js/index';
+import './js/components/App';
+import './js/actions/';
+import './js/reducers/';
+import './js/utils/routes';
 import './sass/main.sass';
 import './sass/_vars.sass';
 import './sass/_fonts.sass';
