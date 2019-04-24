@@ -6,3 +6,6 @@ build:
 
 test:
 	npm run test
+
+prod:
+	npm run production

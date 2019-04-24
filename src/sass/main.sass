@@ -43,15 +43,84 @@ b, strong
 	font-weight: bold
 
 .header
-	height: 100px
+	height: 60px
+
+.left-menu
+	height: auto
+	border: $accent 1px solid
+	ul
+		padding: 50px 0 50px auto
+
+.users-field
 
 .main
-	height: calc(100vh - 200px)
+	padding: 0 0 0 10px
+	border: $accent 1px solid
+
+.main__background
+	height: $container-height
 	background: url(../img/background.jpg) no-repeat center
 	background-size: cover
+	padding: 0
+	margin: 0
+
+.main__bottom
+	height: 55px
 
 #users-diagram
+	position: absolute
+	width: 87.5%
+	bottom: 11.5px
+	right: 0
+
+.flex-items-field
 	display: flex
+	justify-content: space-between
+	align-items: flex-end
+	overflow-x: auto
+
+.flex-item
+	font-size: 16px
+	font-weight: bold
+	white-space: normal
+	flex: 0 0 95px
+	text-align: center
+	background: rgba(#fff, 0.6)
+	margin: 0 1px 11.5px 0
+	padding: 0 5px 0 5px
+	border-radius: 47px 47px 0 0
+
+.flex-item:first-child
+	color: #fff
+	background: rgba($accent, 0.53)
+
+.photo
+	width: 65px
+	height: 65px
+	margin: 15px auto 0 auto
+	border-radius: 32px
+	border: #000 1px solid
+	background: rgba(#fff, 1)
+
+::-webkit-scrollbar
+    height: 32px
+
+::-webkit-scrollbar-button:single-button
+	display: block
+	background: $accent
+	opacity: 1
+	border-radius: 6px
+	height: 32px
+	width: 32px
+
+::-webkit-scrollbar-track
+    background: rgba(234,234,234,1)
+    border-radius: 6px
+ 
+::-webkit-scrollbar-thumb
+    border-radius: 6px
+    background: rgba(210,209,209,1)
+
 
 
 

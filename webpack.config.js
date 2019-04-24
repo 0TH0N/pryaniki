@@ -1,7 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV || 'development',
@@ -21,7 +21,7 @@ module.exports = {
       path: path.resolve(__dirname, 'dist'),
       filename: 'css/style.css',
     }),
-    new HtmlWebpackPlugin({template: './index.html'}),
+    new HtmlWebpackPlugin({ template: './index.html' }),
     new BrowserSyncPlugin({
       host: 'localhost',
       port: 3000,
@@ -31,12 +31,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
         use: 'babel-loader',
       },
       {
-        
+
         test: /\.(sa|sc|c)ss$/,
         exclude: [
           /node_modules/,
@@ -67,5 +67,5 @@ module.exports = {
         ],
       }
     ]
-  }
+  },
 };
