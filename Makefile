@@ -9,3 +9,6 @@ test:
 
 prod:
 	npm run production
+
+lint:
+	npx eslint .

@@ -49,20 +49,26 @@ b, strong
 	height: auto
 	border: $accent 1px solid
 	ul
-		padding: 50px 0 50px auto
+		margin-top: 30px
+		color: $accent
+		font-size: 24px
+		font-weight: bold
+		li
+			list-style-type: none
+			a
+				color: $accent
+				font-size: 16px
+				font-weight: bold
 
 .users-field
 
 .main
-	padding: 0 0 0 10px
 	border: $accent 1px solid
 
 .main__background
 	height: $container-height
 	background: url(../img/background.jpg) no-repeat center
 	background-size: cover
-	padding: 0
-	margin: 0
 
 .main__bottom
 	height: 55px
@@ -70,14 +76,18 @@ b, strong
 #users-diagram
 	position: absolute
 	width: 100%
-	bottom: 11.5px
+	height: 100%
+	bottom: 0
 	right: 0
+
+	z-index: 10
 
 .flex-items-field
 	display: flex
 	justify-content: space-between
 	align-items: flex-end
 	overflow-x: auto
+	overflow-y: hidden
 
 .flex-item-wrap
 	display: flex
@@ -111,25 +121,42 @@ b, strong
 .photo
 	width: 65px
 	height: 65px
-	margin: 15px auto 0 auto
+	margin: 15px auto -17px auto
 	border-radius: 32px
 	border: #000 1px solid
 	background: rgba(#000, 0.7)
 
+.place
+	width: 19px
+	height: 19px
+	margin: 0 20px 0 55px
+	border-radius: 9px
+	font-size: 12px
+	color: #fff
+	text-align: center
+	background: #ff0000
+
 .horizontal-lines-field
-	height: $container-height
+	height: 100%
 	width: 100%
 	position: absolute
 	display: flex
 	flex-direction: column-reverse
-	justify-content: space-between
-	padding-bottom: 11.5px
+	justify-content: left
+	bottom: 0
+	z-index: -100
 	div
-		border-bottom: rgba($accent, 0.12) 1px solid
+		height: 100px
+		border-top: rgba($accent, 0.12) 1px solid	
 		div
-			width: 100px
+			width: 10%
 			text-align: center
 			font-family: "bukhariscript", sans-serif
+			border: none
+	div:first-child
+		border: none
+
+#line-zero
 
 ::-webkit-scrollbar
     height: 32px
